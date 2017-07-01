@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[Creation of computer is succesfull!!! confirmationmessage is : Done! Computer SreeTest has been created]]>
+    </line>
+    <line>
+      <![CDATA[Deletion of computer is succesfull!!! confirmationmessage is : Done! Computer has been deleted]]>
+    </line>
+    <line>
+      <![CDATA[Update of computer is succesfull!!! confirmationmessage is : Done! Computer SreeTest1 has been updated]]>
+    </line>
+    <line>
+      <![CDATA[All test completed succesfully!!!]]>
+    </line>
+  </reporter-output>
+  <suite name="ComputerDatabaseTest" duration-ms="7811" started-at="2017-07-01T01:10:25Z" finished-at="2017-07-01T01:10:33Z">
+    <groups>
+      <group name="create">
+        <method signature="CreateComputer.createComputerTest()[pri:0, instance:Tests.CreateComputer@67117f44]" name="createComputerTest" class="Tests.CreateComputer"/>
+      </group> <!-- create -->
+      <group name="update">
+        <method signature="UpdateComputer.updateComputerTest()[pri:0, instance:Tests.UpdateComputer@6f79caec]" name="updateComputerTest" class="Tests.UpdateComputer"/>
+      </group> <!-- update -->
+      <group name="delete">
+        <method signature="DeleteComputer.deleteComputerTest()[pri:0, instance:Tests.DeleteComputer@5d3411d]" name="deleteComputerTest" class="Tests.DeleteComputer"/>
+      </group> <!-- delete -->
+    </groups>
+    <test name="Tests suite" duration-ms="7787" started-at="2017-07-01T01:10:25Z" finished-at="2017-07-01T01:10:33Z">
+      <class name="Tests.CreateComputer">
+        <test-method status="PASS" signature="createComputerTest()[pri:0, instance:Tests.CreateComputer@67117f44]" name="createComputerTest" duration-ms="3076" started-at="2017-07-01T03:10:25Z" finished-at="2017-07-01T03:10:28Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Creation of computer is succesfull!!! confirmationmessage is : Done! Computer SreeTest has been created]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createComputerTest -->
+      </class> <!-- Tests.CreateComputer -->
+      <class name="Tests.UpdateComputer">
+        <test-method status="PASS" signature="updateComputerTest()[pri:0, instance:Tests.UpdateComputer@6f79caec]" name="updateComputerTest" duration-ms="2582" depends-on-groups="delete" started-at="2017-07-01T03:10:30Z" finished-at="2017-07-01T03:10:33Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Update of computer is succesfull!!! confirmationmessage is : Done! Computer SreeTest1 has been updated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- updateComputerTest -->
+      </class> <!-- Tests.UpdateComputer -->
+      <class name="Tests.DeleteComputer">
+        <test-method status="PASS" signature="deleteComputerTest()[pri:0, instance:Tests.DeleteComputer@5d3411d]" name="deleteComputerTest" duration-ms="2120" depends-on-groups="create" started-at="2017-07-01T03:10:28Z" finished-at="2017-07-01T03:10:30Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Deletion of computer is succesfull!!! confirmationmessage is : Done! Computer has been deleted]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteComputerTest -->
+      </class> <!-- Tests.DeleteComputer -->
+    </test> <!-- Tests suite -->
+    <test name="TimeOut" duration-ms="1" started-at="2017-07-01T01:10:33Z" finished-at="2017-07-01T01:10:33Z">
+      <class name="Tests.GenericClass">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:Tests.GenericClass@50cbc42f]" name="openBrowser" is-config="true" duration-ms="2663" started-at="2017-07-01T03:10:22Z" finished-at="2017-07-01T03:10:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Tests.GenericClass@50cbc42f]" name="closeBrowser" is-config="true" duration-ms="141" started-at="2017-07-01T03:10:33Z" finished-at="2017-07-01T03:10:33Z">
+          <reporter-output>
+            <line>
+              <![CDATA[All test completed succesfully!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Tests.GenericClass -->
+    </test> <!-- TimeOut -->
+  </suite> <!-- ComputerDatabaseTest -->
+</testng-results>
